@@ -1,0 +1,263 @@
+.main-div {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1e309e, #6a82fb); /* Vibrant blue gradient */
+    font-family: 'Poppins', sans-serif; /* Modern font */
+}
+
+.home-div {
+    text-align: center;
+    padding: 20px;
+    height: 350px;
+    min-width: 40%;
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Clean shadow for depth */
+    border-radius: 10px;
+}
+
+.home-div h1 {
+    font-size: 2rem;
+    color: #1e309e; /* Primary color for heading */
+    margin-bottom: 10px;
+}
+
+.home-div p {
+    color: #555; /* Neutral gray for paragraph text */
+    margin-bottom: 20px;
+}
+
+.text-div {
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text-div input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #1e309e; /* Border matching the primary color */
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.text-div input:focus {
+    border-color: #6a82fb; /* Softer blue on focus */
+    outline: none;
+}
+
+.text-div button {
+    background-color: #1e309e; /* Primary button color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.text-div button:hover {
+    background-color: #14207a; /* Darker blue on hover */
+}
+
+
+.option-div {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-div {
+    text-align: center;
+    padding: 20px;
+    width: 40%;
+    border: 2px solid #1e309e;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #1e309e;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Spacing between radio options */
+}
+
+label {
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between radio button and label text */
+    position: relative;
+}
+
+/* Custom radio button styling */
+input[type="radio"] {
+    appearance: none; /* Removes default radio button */
+    width: 20px;
+    height: 20px;
+    border: 2px solid #1e309e; /* Border color of the radio button */
+    border-radius: 50%; /* Makes the input circular */
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    background-color: #ffffff; /* Background color when not selected */
+}
+
+/* Style for selected radio button */
+input[type="radio"]:checked {
+    background-color: #1e309e;
+    border: 2px solid #1e309e; /* Keeps border color the same when selected */
+}
+
+/* The inner dot in the radio button */
+input[type="radio"]:checked::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+}
+
+button.next-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #1e309e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button.next-button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+}
+
+
+.option-div {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1e309e; 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    gap: 15px; 
+    margin-bottom: 20px;
+}
+
+label {
+    position: relative;
+    /* border: 1px solid black; */
+    width: 70%;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #d4d4d4;
+   border: 1px solid black;
+   border-radius: 10px;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    gap: 35px; 
+    position: relative;
+}
+
+input[type="radio"] {
+    appearance: none; 
+    width: 20px;
+    height: 20px;
+    border: 2px solid #1e309e; 
+    border-radius: 50%; 
+    position: absolute;
+    left: 2%;
+    cursor: pointer;
+    /* margin: 0px 30px; */
+    outline: none;
+    background-color: #ffffff;
+}
+
+.emoji{
+    font-size: 3rem;
+}
+
+input[type="radio"]:checked {
+    background-color: #1e309e;
+    border: 2px solid #1e309e; /* Keeps border color the same when selected */
+}
+
+input[type="radio"]:checked::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+}
+
+button.next-button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #1e309e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+button.next-button:hover {
+    background-color: #153d7d; /* Darker shade on hover */
+}
+
+button.next-button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+}
+
+.map-div {
+    text-align: center;
+    padding: 20px;
+    width: 60%;
+    border: 2px solid #1e309e;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
